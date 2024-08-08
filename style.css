@@ -1,0 +1,523 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f7f9;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.header {
+    background-color: white;
+    padding: 40px 60px;
+}
+
+.header .headerContainer {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerContainer .logo {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.logo h1 {
+    color: #3563e9;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.logo .searchbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 20px;
+    border: 1px solid #c3d4e966;
+    border-radius: 70px;
+    width: 490px;
+}
+
+.searchbar .searchFilter {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile .svg,
+.notification .svg {
+    padding: 10px;
+    border: 1px solid #c3d4e966;
+    border-radius: 50px;
+}
+
+.profile .notification {
+    position: relative;
+}
+
+.notification .badge {
+    width: 10px;
+    height: 10px;
+    background-color: #ff4423;
+    position: absolute;
+    border-radius: 50px;
+    top: 3px;
+    right: 2px;
+}
+
+/* RENTAL CAR CARD */
+
+.rentalCarCard {
+    margin: 32px 0;
+}
+
+.rentalCarCard .rentalCarCardContainer {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.rentalCarCardContainer .card1,
+.rentalCarCardContainer .card2 {
+    background-color: #54a6ff;
+    background-image: url("./BG2.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.rentalCarCardContainer .card2 {
+    background-image: url("./BG.png");
+    background-color: #3563e9;
+}
+
+.card1 .cardContent,
+.card2 .cardContent {
+    width: 285px;
+    padding: 24px 0 110px 24px;
+}
+
+.card1 .cardContent h1,
+.card2 .cardContent h1 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: white;
+}
+
+.card1 .cardContent p,
+.card2 .cardContent p {
+    padding: 16px 0 20px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.card1 .cardContent button,
+.card2 .cardContent button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding: 10px 20px;
+    background-color: #3563e9;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.card2 .cardContent button {
+    background-color: #54a6ff;
+}
+
+/* PICKUP LOCATION  */
+
+.pickup .pickupContainer {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+}
+
+.pickupContainer .pickupCard {
+    background-color: white;
+    border-radius: 10px;
+    padding: 24px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.pickupContainer .pickupHead {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pickupHead img {
+    padding: 4px;
+    background-color: #3563e94d;
+    border-radius: 50px;
+}
+
+.dropoff img {
+    background-color: #5caffc4d;
+}
+
+.pickupCard .pickupContent {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.pickupCard .location {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-right: 24px;
+    border-right: 1px solid #c3d4e966;
+}
+
+.pickupCard .location:last-child {
+    padding: 0;
+}
+
+.location:last-child {
+    border: none;
+}
+
+.location h1 {
+    color: #1a202c;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.location .city {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 8px;
+}
+
+.city p {
+    color: #90a3bf;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.12px;
+}
+
+.swap img {
+    padding: 18px;
+    background-color: #3563e9;
+    border-radius: 10px;
+}
+
+.popularCar .popularCarContainer {
+    width: 1140px;
+    margin: auto;
+}
+
+.popularCarContainer .popularCarHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popularCarHead h1 {
+    margin: 45px 0 30px 0;
+    color: #90a3bf;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.16px;
+}
+
+.popularCarHead p {
+    color: #3563E9;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.popularCarContainer .popularCars {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.popularCars .favorite {
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.favorite .favoriteHead {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.favoriteHead .head {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.favoriteHead .head h1 {
+    color: #1a202c;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.favoriteHead .head p {
+    color: #90a3bf;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.favorite .carImg img {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    padding-top: 65px;
+    /* z-index: 1; */
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #351919 100%); */
+}
+
+.popularCars .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 25px 0;
+}
+
+.content .fuel,
+.content .manual,
+.content .people {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.content .fuel p,
+.content .manual p,
+.content .people p {
+    color: #90a3bf;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.64px;
+}
+
+.favorite .price {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.2px;
+    color: #1a202c;
+}
+
+.price .likePrice {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.likePrice p {
+    color: #90A3BF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.price h1 span {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #90a3bf;
+}
+
+.price button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #3563E9;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    line-height: 24px;
+    border: none;
+    outline: none;
+}
+
+/* MORE CARS */
+
+
+.moreCars {
+    margin: 64px 0;
+}
+
+.moreCars .moreCarsContainer {
+    width: 1140px;
+    margin: auto;
+}
+
+.moreCarsContainer .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 640px;
+    margin-left: auto;
+}
+
+.moreCarsContainer .content button {
+    color: white;
+    padding: 10px 20px;
+    background-color: #3563E9;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.moreCarsContainer .content p {
+    color: #90A3BF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: white;
+}
+
+.footer .footerContainer {
+    width: 1170px;
+    margin: auto;
+    padding: 80px 0 40px 0;
+}
+
+.footerContainer .footerContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerContainer .footerHead {
+    width: 300px;
+}
+
+.footerHead h1 {
+    color: #3563E9;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.footerHead p {
+    color: #13131399;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.footerContent .footerCols {
+    display: flex;
+    gap: 60px;
+}
+
+.footerCols .col1,
+.footerCols .col2,
+.footerCols .col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.col1 h1,
+.col2 h1,
+.col3 h1 {
+    padding-bottom: 4px;
+    color: #1A202C;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.col1 a,
+.col2 a,
+.col3 a {
+    color: #13131399;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+    background-color: white;
+}
+
+.copyright .copyrightContainer {
+    width: 1170px;
+    margin: auto;
+    padding: 35px 0 60px 0;
+    border-top: 1px solid #13131329
+}
+
+.copyrightContainer .copyrightContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rights p {
+    color: #1A202C;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.copyrightContent .termAndConditions {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.termAndConditions p {
+    color: #1A202C;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
