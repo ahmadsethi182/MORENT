@@ -408,6 +408,7 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .moreCarsContainer .content p {
