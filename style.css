@@ -33,6 +33,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
+    cursor: pointer;
 }
 
 .logo .searchbar {
@@ -95,7 +96,7 @@ body {
 .rentalCarCardContainer .card1,
 .rentalCarCardContainer .card2 {
     background-color: #54a6ff;
-    background-image: url("./BG2.png");
+    background-image: url("./imgs/BG2.png");
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -103,7 +104,7 @@ body {
 }
 
 .rentalCarCardContainer .card2 {
-    background-image: url("./BG.png");
+    background-image: url("./imgs/BG.png");
     background-color: #3563e9;
 }
 
@@ -374,6 +375,7 @@ body {
     line-height: 24px;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 /* MORE CARS */
